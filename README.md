@@ -34,11 +34,18 @@ Docker uses a client-server architecture.
 
 - No Virtualisation, the application or service is deployed directly onto the machine.
 
+
+![Bare Metal Image](https://github.com/TluwaniMS/docker-quick-guide/blob/master/supporting-images/Hardware.png)
+
 ### Virtual Machines:
 
 - The hardware is virtualised so multiple operating systems can be isolated on the machine.
+
+![Virtual Machine Image](https://github.com/TluwaniMS/docker-quick-guide/blob/master/supporting-images/Virtual_Machines.png)
 
 ### Containers:
 
 Virtualised operating system
 - Libraries and operating applications are isolated with their own namespace
+
+![Docker Container Image](https://github.com/TluwaniMS/docker-quick-guide/blob/master/supporting-images/Containers.png)

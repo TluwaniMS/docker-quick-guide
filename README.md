@@ -88,3 +88,66 @@ The `RUN` instruction performs the execution of commands within a new layer, whi
 ### EXPOSE:
 `EXPOSE <port> [<port>/<protocol>]`
 The `EXPOSE` command notifies Docker that the container will be listening on designated network ports during runtime. It's important to note that the `EXPOSE` instruction doesn't actively publish the ports. Instead, it serves as a form of communication or documentation between the image builder and the container operator, indicating which ports are intended to be made public.
+
+# Docker build:
+
+The `docker build` command constructs Docker images by utilizing both a Dockerfile and a 'context'.
+
+`docker build [OPTIONS] PATH | URL | -`
+
+### Practice.
+
+`NB!`
+
+To proceed with the practice exercises, kindly make a copy of the provided [repository](https://github.com/TluwaniMS/docker-practice-project) by cloning it.
+
+# Building a docker image:
+
+Switch to the root directory of the `docker-practice-project` and run the following command:
+
+```
+docker —tag node-docker-practice:v1.0.0 .
+```
+
+### —tag / -t:
+Image name and optionally a tag in the name:tag format
+
+`.` :
+
+The `“ . ”` Specifies the path where the Dockerfile will be found, in this case pointing to the current directory.
+
+### Building a docker image using a git repository:
+
+`NB!`
+
+For this task, there is no requirement to clone the `docker-practice-project`.
+
+Navigate to your terminal and run the following command:
+
+```
+docker build -t docker-practice:repo https://github.com/TluwaniMS/docker-practice-project.git
+```
+
+### Break down of URL:  
+
+`https://github.com/<repo-owner>/<repo>.git#<branch>:<directory-that-contains-dockerfile>`
+
+
+# Docker Image management:
+
+### List all images:
+
+`docker image ls`
+
+### Remove all unused images:
+
+`docker image prune`
+
+### Remove a specific image:
+
+`docker image rm <image_identifier>`
+
+### docker image history:
+
+`docker image history <image_identifier>`
+

@@ -128,7 +128,7 @@ Navigate to your terminal and run the following command:
 docker build -t docker-practice:repo https://github.com/TluwaniMS/docker-practice-project.git
 ```
 
-### Break down of URL:  
+### Break down of URL:
 
 `https://github.com/<repo-owner>/<repo>.git#<branch>:<directory-that-contains-dockerfile>`
 
@@ -151,3 +151,12 @@ docker build -t docker-practice:repo https://github.com/TluwaniMS/docker-practic
 
 `docker image history <image_identifier>`
 
+# Docker run:
+
+Generate and execute a fresh container using an image.
+
+`docker run [OPTIONS] IMAGE [COMMAND] [ARG...]`
+
+Generating a fresh container and assigning it a designated name.
+
+`docker run —name <prefered_container_name> <image_name/image_id>`

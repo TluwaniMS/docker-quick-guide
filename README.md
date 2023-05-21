@@ -180,3 +180,41 @@ Execute the container in the background and display the identification number of
 `—publish / -p`
 
 `docker run -p <host_port>:<container_port> <image_name/image_id>`
+
+# Docker container management:
+
+#### List all running containers:
+
+`docker container ls / docker ps`
+
+#### List all active and inactive containers:
+
+`docker container ls -a / docker ps -a`
+
+#### Rename a container:
+
+`docker container rename <container_name/container_id> <new_name>`
+
+#### Remove all unused containers:
+
+`docker container prune`
+
+#### Remove a specific container:
+
+`docker container rm <container_name/container_id>`
+
+#### Stop a running container:
+
+`docker container stop <container_name/container_id>`
+
+#### Start a stopped container:
+
+`docker container start <container_name/container_id>`
+
+#### Inspect a docker container:
+
+`docker container inspect <container_name/container_id>`
+
+#### Check container logs:
+
+`docker container logs <container_name/container_id>`

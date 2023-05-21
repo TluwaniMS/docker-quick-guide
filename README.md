@@ -160,3 +160,17 @@ Generate and execute a fresh container using an image.
 Generating a fresh container and assigning it a designated name.
 
 `docker run —name <prefered_container_name> <image_name/image_id>`
+
+#### Run container in detached mode:
+
+Execute the container in the background and display the identification number of the container.
+
+`—detach / -d`
+
+`docker run —name <container_name> -d <image_name/image_id>`
+
+#### Run a container  and automatically remove it when it exits:
+
+`—rm`
+
+`docker run —name <container_name> —rm <image_name/image_id>`

@@ -174,3 +174,9 @@ Execute the container in the background and display the identification number of
 `—rm`
 
 `docker run —name <container_name> —rm <image_name/image_id>`
+
+#### Expose the port(s) of a container to the host system for publishing:
+
+`—publish / -p`
+
+`docker run -p <host_port>:<container_port> <image_name/image_id>`

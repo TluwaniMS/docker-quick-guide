@@ -89,6 +89,13 @@ The `RUN` instruction performs the execution of commands within a new layer, whi
 `EXPOSE <port> [<port>/<protocol>]`
 The `EXPOSE` command notifies Docker that the container will be listening on designated network ports during runtime. It's important to note that the `EXPOSE` instruction doesn't actively publish the ports. Instead, it serves as a form of communication or documentation between the image builder and the container operator, indicating which ports are intended to be made public.
 
+
+### ENV:
+`ENV <key>=<value>`
+
+The `ENV` command establishes the environment variable <key> and assigns it the value <value>.
+This value will persist in the environment throughout all subsequent instructions during the build stage.
+
 # Docker build:
 
 The `docker build` command constructs Docker images by utilizing both a Dockerfile and a 'context'.

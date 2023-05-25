@@ -142,33 +142,33 @@ docker build -t docker-practice:repo https://github.com/TluwaniMS/docker-practic
 
 # Docker Image management:
 
-### List all images:
+* ### List all images:
 
 `docker image ls`
 
-### Remove all unused images:
+* ### Remove all unused images:
 
 `docker image prune`
 
-### Remove a specific image:
+* ### Remove a specific image:
 
 `docker image rm <image_identifier>`
 
-### docker image history:
+* ### docker image history:
 
 `docker image history <image_identifier>`
 
 # Docker run:
 
-Generate and execute a fresh container using an image.
+* Generate and execute a fresh container using an image.
 
 `docker run [OPTIONS] IMAGE [COMMAND] [ARG...]`
 
-Generating a fresh container and assigning it a designated name.
+* Generating a fresh container and assigning it a designated name.
 
 `docker run —name <prefered_container_name> <image_name/image_id>`
 
-#### Run container in detached mode:
+* #### Run container in detached mode:
 
 Execute the container in the background and display the identification number of the container.
 
@@ -176,13 +176,13 @@ Execute the container in the background and display the identification number of
 
 `docker run —name <container_name> -d <image_name/image_id>`
 
-#### Run a container  and automatically remove it when it exits:
+* #### Run a container  and automatically remove it when it exits:
 
 `—rm`
 
 `docker run —name <container_name> —rm <image_name/image_id>`
 
-#### Expose the port(s) of a container to the host system for publishing:
+* #### Expose the port(s) of a container to the host system for publishing:
 
 `—publish / -p`
 
@@ -190,38 +190,38 @@ Execute the container in the background and display the identification number of
 
 # Docker container management:
 
-#### List all running containers:
+* #### List all running containers:
 
 `docker container ls / docker ps`
 
-#### List all active and inactive containers:
+* #### List all active and inactive containers:
 
 `docker container ls -a / docker ps -a`
 
-#### Rename a container:
+* #### Rename a container:
 
 `docker container rename <container_name/container_id> <new_name>`
 
-#### Remove all unused containers:
+* #### Remove all unused containers:
 
 `docker container prune`
 
-#### Remove a specific container:
+* #### Remove a specific container:
 
 `docker container rm <container_name/container_id>`
 
-#### Stop a running container:
+* #### Stop a running container:
 
 `docker container stop <container_name/container_id>`
 
-#### Start a stopped container:
+* #### Start a stopped container:
 
 `docker container start <container_name/container_id>`
 
-#### Inspect a docker container:
+* #### Inspect a docker container:
 
 `docker container inspect <container_name/container_id>`
 
-#### Check container logs:
+* #### Check container logs:
 
 `docker container logs <container_name/container_id>`

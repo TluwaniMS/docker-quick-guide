@@ -270,3 +270,35 @@ docker run -d -p 27017:27017 -v data-vol:/data/db --name <container_name> mongo
 ```
 docker exec -it <container_name> bash
 ```
+
+## Postgres:
+
+* #### Pull the latest postgres image:
+
+```
+docker pull postgres
+```
+
+* #### Create the Postgres container and publish port 5432:
+
+```
+docker run --name <container_name> -d -e POSTGRES_PASSWORD=<password> -p 5432:5432 postgres
+```
+  
+* #### Create the Postgres container, publish port 5432, and persist the data created:
+
+```
+docker run --name <container_name> -d -e POSTGRES_PASSWORD=<password> -p 5432:5432 postgres
+```
+
+* #### Connecting to the PostgreSQL CLI running inside the Docker container:
+
+```
+docker exec -it <container_name> bash
+```
+
+* #### Connecting to the PostgreSQL instance
+
+```
+psql -h <host> -U <user_name>
+```

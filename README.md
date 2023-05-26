@@ -225,3 +225,19 @@ Execute the container in the background and display the identification number of
 * #### Check container logs:
 
 `docker container logs <container_name/container_id>`
+  
+# Docker Hub:
+
+Docker Hub functions as a platform offered by Docker that facilitates the discovery and exchange of container images.
+
+* #### Generating an image for a Docker repository:
+
+`docker build -t <docker-hub-user-name>/<repo-name>:<tag> .`
+
+* #### Uploading/Pushing an image to the repository:
+
+`docker push <docker-hub-user-name>/<repo-name>:<tag>`
+
+* #### Retrieving/Pulling an image from Docker Hub
+
+`docker pull <docker-hub-user-name>/<repo-name>:<tag>`

@@ -259,3 +259,9 @@ docker pull mongo
 ```
 docker run -d -p 27017:27017 --name mongo-database mongo
 ```
+  
+* #### Create the mongodb container, publish port 27017, and persist the data created:
+  
+```
+docker run -d -p 27017:27017 -v data-vol:/data/db --name mongo-database mongo
+```

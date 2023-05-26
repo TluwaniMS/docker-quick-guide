@@ -241,3 +241,21 @@ Docker Hub functions as a platform offered by Docker that facilitates the discov
 * #### Retrieving/Pulling an image from Docker Hub
 
 `docker pull <docker-hub-user-name>/<repo-name>:<tag>`
+  
+# Setting up databases using docker images:
+  
+## MongoDB:
+  
+Creating Mongo database from docker image
+
+* #### Pull the latest mongodb image:
+  
+```
+docker pull mongo
+```
+
+* #### Create the mongodb container and publish port 27017:
+  
+```
+docker run -d -p 27017:27017 --name mongo-database mongo
+```

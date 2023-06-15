@@ -225,6 +225,40 @@ Execute the container in the background and display the identification number of
 * #### Check container logs:
 
 `docker container logs <container_name/container_id>`
+
+# Docker Networking:
+
+Container networking encompasses the capability of containers to establish connections and exchange information among themselves, as well as with workloads outside the Docker ecosystem.
+
+# Docker network management:
+
+* ### Create a network
+
+`docker network create [OPTIONS] NETWORK`
+
+* ### List all networks
+
+`docker network ls [OPTIONS]`
+
+* ### Remove one or more networks
+
+`docker network rm NETWORK [NETWORK...]`
+
+* ### Remove all unused networks
+
+`docker network prune [OPTIONS]`
+
+* ### Connect a container to a network
+
+`docker network connect [OPTIONS] NETWORK CONTAINER`
+
+* ### Disconnect a container from a network
+
+`docker network disconnect [OPTIONS] NETWORK CONTAINER`
+
+* ### Display detailed information on one or more networks
+
+`docker network inspect [OPTIONS] NETWORK [NETWORK...]`
   
 # Docker Hub:
 

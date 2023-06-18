@@ -336,3 +336,9 @@ docker exec -it <container_name> bash
 ```
 psql -h <host> -U <user_name>
 ```
+
+# Docker Practice Projects:
+
+* [Shell Interaction](https://github.com/TluwaniMS/docker-shell-practice)
+* [Basic Container Networking](https://github.com/TluwaniMS/docker-practice-project)
+* [Intermediate Container Networking and Docker Compose](https://github.com/TluwaniMS/docker-networking-and-docker-compose-guide)
